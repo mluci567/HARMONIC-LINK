@@ -2,9 +2,7 @@
 
 ## Project Overview
 
-Harmonic Link is a web application designed to uncover and visualize musical connections, referred to as "harmonic links," between any two specified artists. The core functionality combines advanced graph traversal algorithms with generative AI capabilities to identify the shortest collaborative path and automatically create a curated playlist that reflects that artistic journey.
-
-***access: https://harmonic-link-eight.vercel.app/ -> may be unavailable outside of presentation hours to avoid incurring costs***
+Harmonic Link is a web application designed to uncover and visualize musical connections, referred to as "harmonic links," between any two specified artists. The core functionality combines advanced graph traversal algorithms with generative AI capabilities to identify the shortest collaborative path and automatically create a curated playlist that reflects that artistic journey.***access: https://harmonic-link-eight.vercel.app/ -> may be unavailable outside of presentation hours to avoid incurring costs***
 ---
 
 ## Architecture and Components
