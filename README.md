@@ -50,7 +50,7 @@ This function generates a playlist that encapsulates the musical journey found b
 
 ## Configuration
 
-The backend environment relies on the following variables, typically loaded via a `.env` file, for external API authentication and database connection:
+The frontend Uses a component-based structure built with React to handle user interaction and dynamically display search results, the calculated paths, and the generated playlists. The backend environment relies on the following variables, typically loaded via a `.env` file, for external API authentication and database connection:
 
 | Service | Environment Variables | Description |
 | :--- | :--- | :--- |
