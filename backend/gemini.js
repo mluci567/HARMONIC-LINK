@@ -4,7 +4,6 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// Function to find a path between two artists using the Gemini API
 const findGeminiPath = async (startArtistName, endArtistName) => {
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
 
@@ -53,7 +52,6 @@ const findGeminiPath = async (startArtistName, endArtistName) => {
     }
 };
 
-// Updated function to generate a playlist of songs using the Gemini API
 const generatePlaylist = async (path) => {
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
     const artistNames = path.map(p => p.name).join(', ');

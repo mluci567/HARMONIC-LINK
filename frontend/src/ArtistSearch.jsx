@@ -27,7 +27,6 @@ export default function ArtistSearch({ onArtistSelect, placeholder }) {
 
   return (
     <div className="search-container">
-      {/* The styling is applied via .artist-search input in App.css */}
       <input
         type="text"
         value={query}

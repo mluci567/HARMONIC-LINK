@@ -4,7 +4,6 @@ const axios = require('axios');
 
 let spotifyClientPromise;
 
-// This function initializes the Spotify client with a new token
 const initializeSpotifyClient = async () => {
     const authString = Buffer.from(`${process.env.SPOTIFY_CLIENT_ID}:${process.env.SPOTIFY_CLIENT_SECRET}`).toString('base64');
     try {
@@ -25,11 +24,10 @@ const initializeSpotifyClient = async () => {
         });
     } catch (error) {
         console.error('Error fetching Spotify token:', error.response ? error.response.data : error.message);
-        throw error; // Propagate the error to be caught by the calling function
+        throw error; 
     }
 };
 
-// This function ensures we have an initialized client before making a request
 const getClient = () => {
     if (!spotifyClientPromise) {
         spotifyClientPromise = initializeSpotifyClient();
@@ -43,7 +41,6 @@ setInterval(() => {
     spotifyClientPromise = initializeSpotifyClient();
 }, 3540 * 1000);
 
-// Function to search for artists
 const searchArtists = async (artistName) => {
     const spotifyClient = await getClient();
     const { data } = await spotifyClient.get(`/search?q=${encodeURIComponent(artistName)}&type=artist&limit=5`);
@@ -54,14 +51,12 @@ const searchArtists = async (artistName) => {
     }));
 };
 
-// Function to get a single artist's info
 const getArtist = async (artistName) => {
     const spotifyClient = await getClient();
     const { data } = await spotifyClient.get(`/search?q=${encodeURIComponent(artistName)}&type=artist&limit=1`);
     return data.artists.items[0];
 };
 
-// Function to get an artist's top tracks
 const getArtistTopTracks = async (artistName) => {
     const spotifyClient = await getClient();
     const artist = await getArtist(artistName);

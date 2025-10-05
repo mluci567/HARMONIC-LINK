@@ -31,8 +31,7 @@ const ResultsPage = ({ path, playlist, onGoBack }) => {
       </div>
       
       <button onClick={onGoBack} className="try-again-button">Try Again</button>
-
-      {/* The last child ChainBorder will be targeted by CSS `:last-child` for ordering */}
+      
       <ChainBorder />
     </div>
   );

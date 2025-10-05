@@ -245,11 +245,7 @@ body {
 }
 
 .try-again-button:hover {
-<<<<<<< HEAD
   background-color: #b7b6b6;
-=======
-  background-color: #000000;
->>>>>>> 24be4d4 (loading screen and db bones)
   color: #ffffff;
 }
 

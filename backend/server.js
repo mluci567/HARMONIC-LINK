@@ -36,7 +36,6 @@ app.post('/api/path', async (req, res) => {
         const path = await findArtistPath(startArtistName, endArtistName);
 
         if (path) {
-            // Fetch images for all artists in the path from Spotify
             const pathWithImages = await Promise.all(path.map(async (step) => {
                 const artistInfo = await getArtist(step.artist);
                 return {
