@@ -6,7 +6,7 @@ const LoadingPage = () => {
     <div className="loading-page">
       <div className="video-container">
         <video autoPlay loop muted playsInline className="loading-video">
-          <source src="/LoadingVid.mov" type="video/mp4" />
+          <source src="/LoadingVid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
