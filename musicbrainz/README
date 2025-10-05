@@ -1,0 +1,16 @@
+The file under mbdump/ contains one document (entity) per line, in JSON
+format, and is named according to the type of entity in the dump.
+
+               List of relations
+ Schema |     Name      | Type  |     Owner     
+--------+---------------+-------+---------------
+ public | artist        | table | marusialuciuk
+ public | event         | table | marusialuciuk
+ public | instrument    | table | marusialuciuk
+ public | label         | table | marusialuciuk
+ public | place         | table | marusialuciuk
+ public | recording     | table | marusialuciuk
+ public | release       | table | marusialuciuk
+ public | release_group | table | marusialuciuk
+ public | series        | table | marusialuciuk
+ public | work          | table | marusialuciuk
